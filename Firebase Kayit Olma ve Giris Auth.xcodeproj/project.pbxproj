@@ -11,6 +11,7 @@
 		93B474CA2997FB1E0076B0C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B474C92997FB1E0076B0C4 /* ContentView.swift */; };
 		93B474CC2997FB1E0076B0C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B474CB2997FB1E0076B0C4 /* Assets.xcassets */; };
 		93B474CF2997FB1E0076B0C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B474CE2997FB1E0076B0C4 /* Preview Assets.xcassets */; };
+		93B474D72997FD860076B0C4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93B474D62997FD860076B0C4 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B474D72997FD860076B0C4 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Firebase Kayit Olma ve Giris Auth";
+			packageProductDependencies = (
+				93B474D62997FD860076B0C4 /* FirebaseAuth */,
+			);
 			productName = "Firebase Kayit Olma ve Giris Auth";
 			productReference = 93B474C42997FB1E0076B0C4 /* Firebase Kayit Olma ve Giris Auth.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 93B474BB2997FB1E0076B0C4;
+			packageReferences = (
+				93B474D52997FD860076B0C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 93B474C52997FB1E0076B0C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93B474D52997FD860076B0C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93B474D62997FD860076B0C4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93B474D52997FD860076B0C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93B474BC2997FB1E0076B0C4 /* Project object */;
 }
