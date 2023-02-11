@@ -57,6 +57,13 @@ struct ContentView: View {
                 .modifier(ButtonModifiers())
                 .padding()
                 Button(action: {
+                    FirebaseManager.shared.auth.signIn(withEmail: ePosta, password: parola) {
+                        result, error in
+                        if error == nil {
+                         print("Giris Yapildi")
+                        }
+                        
+                    }
                     
                 }, label: {
                     
