@@ -23,6 +23,26 @@ struct ContentView: View {
                 .padding()
                 .font(.system(size: 20))
             
+            HStack{
+                Button(action: {
+                    
+                }, label: {
+                    Text("Kayit Ol")
+                        .foregroundColor(.white)
+                })
+                .modifier(ButtonModifiers())
+                .padding()
+                Button(action: {
+                    
+                }, label: {
+                    
+                    Text("Giris Yap")
+                        .foregroundColor(.white)
+                    
+                })
+                .modifier(ButtonModifiers())
+                
+            }
             
         }
         .padding()
