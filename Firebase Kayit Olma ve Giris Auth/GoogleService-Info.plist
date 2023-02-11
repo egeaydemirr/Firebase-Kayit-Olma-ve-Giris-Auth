@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>308884514127-9tic4kso96pl6th88djs1c1cqo7pbinh.apps.googleusercontent.com</string>
+	<string>308884514127-hvljdcgqnfjie7474dgo267hj7d3r3c6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.308884514127-9tic4kso96pl6th88djs1c1cqo7pbinh</string>
+	<string>com.googleusercontent.apps.308884514127-hvljdcgqnfjie7474dgo267hj7d3r3c6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDR5K6XjOLIVxg-MfADIpxEKLNNgCRr3UU</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>EgeAydemir.Firebase-Kayit-Olma-ve-Giris-Auth</string>
+	<string>EgeAydemir.Firebase-Kayit-Olma-ve-Giris-Auth1</string>
 	<key>PROJECT_ID</key>
 	<string>ornekapp-6fa6b</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:308884514127:ios:0b15f946f8999b1010513a</string>
+	<string>1:308884514127:ios:8b524abf117bb9e810513a</string>
 </dict>
 </plist>

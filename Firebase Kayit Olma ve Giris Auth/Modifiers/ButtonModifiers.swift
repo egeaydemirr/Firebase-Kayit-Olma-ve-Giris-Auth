@@ -10,9 +10,11 @@ import SwiftUI
 struct ButtonModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .padding()
+            .padding(.horizontal, 25)
+            .padding(.vertical, 10)
             .background(.blue)
             .clipShape(Capsule())
+            .font(.system(size: 25))
     }
 }
 

@@ -6,6 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
+
+class FirebaseManager: NSObject {
+    
+    let auth: Auth
+    
+    static let shared = FirebaseManager()
+    
+    override init() {
+        FirebaseApp.configure()
+        
+        self.auth = Auth.auth()
+        
+        super.init()
+    }
+}
+
 
 struct ContentView: View {
     @State var ePosta: String = ""
@@ -19,17 +36,24 @@ struct ContentView: View {
             TextField("E-posta", text: $ePosta)
                 .padding()
                 .font(.system(size:20))
+                .autocapitalization(.none)
             SecureField("Parola", text: $parola)
                 .padding()
                 .font(.system(size: 20))
+                .autocapitalization(.none)
             
             HStack{
-                Button(action: {
-                    
-                }, label: {
+                Button {
+                    FirebaseManager.shared.auth.createUser(withEmail: ePosta, password: parola) {
+                        result, error in
+                        if error == nil {
+                            return
+                        }
+                    }
+                } label: {
                     Text("Kayit Ol")
                         .foregroundColor(.white)
-                })
+                }
                 .modifier(ButtonModifiers())
                 .padding()
                 Button(action: {
@@ -42,12 +66,15 @@ struct ContentView: View {
                 })
                 .modifier(ButtonModifiers())
                 
+                
             }
             
         }
         .padding()
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
